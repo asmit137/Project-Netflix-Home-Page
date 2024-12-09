@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-weight: ; */
+    font-family: Cambria, Cochin, Georgia, Times;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("images/backgroud_image.jpg");
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+}
+
+.main .layer {
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.69;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    margin: auto;
+    height: 62px;
+}
+
+nav img {
+    color: red;
+    width: 140px;
+    position: relative;
+    z-index: 1;
+}
+
+nav button {
+    position: relative;
+    z-index: 1;
+}
+
+.info {
+    text-align: center;
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 10px;
+    padding: 0 23px;
+}
+
+
+.info>:nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+}
+
+.info> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.info> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.line {
+    background-color: rgb(35, 35, 35);
+    height: 7px;
+}
+
+.btn {
+    font-size: 20px;
+    color: white;
+    background-color: rgb(229, 9, 20);
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.btn-red:hover {
+    background-color: #c11119;
+}
+
+.btn-start {
+    padding: 14px 30px;
+    font-size: 1.5rem;
+}
+
+.btn-sign {
+    padding: 4px 15px;
+    font-size: 17px;
+}
+
+.btn-english {
+    padding: 3px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.option {
+    background-color: white;
+    color: black;
+    border: 2px solid white
+}
+
+.minus{
+    display: none;
+}
+
+
+
+.button-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+}
+
+.email_text {
+    padding: 9px 100px 6px 13px;
+    font-size: 20px;
+    border-radius: 4px;
+    background: transparent;
+    color: white;
+    height: 35px;
+    margin-right: 5px;
+}
+
+.first {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70vw;
+    margin: 10px auto;
+}
+
+.tv_img {
+    position: relative;
+}
+
+.tv_img img {
+    width: 30vw;
+    position: relative;
+    z-index: 10;
+}
+
+.tv_img video {
+    position: absolute;
+    top: 61px;
+    left: 56px;
+    width: 22vw;
+}
+
+.first_content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.first_content :first-child {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.first_content :nth-child(2) {
+    font-size: 24px;
+}
+
+.third video {
+    position: absolute;
+    top: 31px;
+    left: 78px;
+    width: 18vw;
+}
+
+.faq h2 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    padding: 20px;
+}
+
+.faq_box {
+    background-color: rgb(45, 45, 45);
+    width: 70vw;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 20px 20px;
+    color: white;
+}
+
+.faq_box:hover {
+    background-color: #454648;
+    transition: all 0.4s ease-out;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    color: white;
+    gap: 20px;
+    font-size: 24px;
+    height: 60vh;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
+    margin: 50px auto;
+    gap: 30px;
+    color: #ffffffb3;
+}
+
+footer a {
+    color: #ffffffb3;
+}
+
+.list li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    width: 60vw;
+    font-size: 0.875rem;
+    font-weight: 400;
+
+}
+
+.last-btn {
+    width: 8vw;
+    padding: 6px;
+    margin: 0px;
+}
+
+.stranger_box {
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    bottom: 16px;
+    left: 70px;
+    padding: 10px;
+    border: 2px solid gray;
+    border-radius: 18px;
+    background-color: black;
+}
+
+.stranger_img {
+    display: flex;
+    align-items: center;
+}
+
+.stranger_img img {
+    width: 60px;
+}
+
+.description {
+    display: flex;
+
+    flex-direction: column;
+    margin: auto;
+}
+
+.description .spans {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.gif {
+    display: flex;
+    align-items: center;
+}
+
+.gif img {
+    width: 50px;
+}
+
+.answers {
+    display: none;
+    margin: -10px auto auto auto;
+    color: white;
+    width: 70vw;
+    background-color: rgb(45, 45, 45);
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.show {
+    display: flex;
+}
